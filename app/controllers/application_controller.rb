@@ -16,9 +16,9 @@ class App < Sinatra::Base
       @hero_power = []
       
       @team_members.each do |hero|
-        @hero_name=hero[:name]
-        @hero_bio=hero[:bio]
-        @hero_power=hero[:power]
+        @hero_name << hero[:name]
+        @hero_bio << hero[:bio]
+        @hero_power << hero[:power]
       end
       erb:team
     end
